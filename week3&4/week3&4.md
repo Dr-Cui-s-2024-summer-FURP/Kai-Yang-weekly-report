@@ -23,7 +23,44 @@ It updates the model parameters by calculating the gradient of the loss function
 
 
 ##  Try VGG16 architecture
-Load the CIFAR-10 data set and train
+![vgg16_image](/images/VGG16.jpg)
+
+### Load the CIFAR-10 dataset 
+```python
+train_data = torchvision.datasets.CIFAR10(root='./dataset', train=True, transform = torchvision.transforms.ToTensor(), download=True)  
+test_data = torchvision.datasets.CIFAR10(root='./dataset', train=False, transform = torchvision.transforms.ToTensor(), download=True)
+
+train_dataloader = DataLoader(train_data, batch_size=64, shuffle=True)  
+test_dataloader = DataLoader(test_data, batch_size=64, shuffle=True)
+```
+
+###  Build VGG16 architecture
+```python
+#创建神经网络  
+class Tudui(nn.Module):  
+    def __init__(self):  
+        super(Tudui, self).__init__()  
+        self.model = nn.Sequential(  
+            nn.Conv2d(3, 32, kernel_size=5, stride=1, padding=2),  
+            nn.MaxPool2d(2),  
+            nn.Conv2d(32, 32, kernel_size=5, stride=1, padding=2),  
+            nn.MaxPool2d(2),  
+            nn.Conv2d(32, 64, kernel_size=5, stride=1, padding=2),  
+            nn.MaxPool2d(2),  
+            nn.Flatten(),  
+            nn.Linear(64 * 4 * 4, 64),  
+            nn.Linear(64,10),  
+        )  
+  
+    def forward(self, x):  
+        x = self.model(x)  
+        return x
+```
+
+
+
+
+
 
 ###  Call gpu
  ``` python
@@ -40,3 +77,6 @@ for data in dataloader:
 ```
 
 ###  Save trained model
+
+
+> Written with [StackEdit](https://stackedit.io/).
