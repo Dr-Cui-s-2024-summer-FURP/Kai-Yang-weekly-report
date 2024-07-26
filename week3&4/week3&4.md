@@ -23,7 +23,7 @@ It updates the model parameters by calculating the gradient of the loss function
 
 
 ##  Try VGG16 architecture
-![vgg16_image](/images/VGG16.jpg)
+![vgg16_image](./images/VGG16.jpg)
 
 ### Load the CIFAR-10 dataset 
 ```python
