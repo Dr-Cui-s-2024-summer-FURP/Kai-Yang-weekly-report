@@ -5,7 +5,7 @@ Tensor can represent high latitude data structures and be supported by GPU accel
 ``` forward()```
 
 ###  Convolution Layers
-![grad](./images/Conv2D.png)
+![grad](./images/Conv2D-.png)
 
 ```Conv2D()```
 Like fliter(IIP)
@@ -23,7 +23,7 @@ A function that measures the difference between the predicted value```outputs```
 
 ### Backpropagation
 It updates the model parameters by calculating the gradient of the loss function with respect to each parameter. (Like heuristic algorithm in AIM)
-![grad](./images/grd.png)
+![grad](./images/Grd.png)
 
 ##  Optimizers
 
@@ -41,7 +41,7 @@ for input, target in dataset:
 - Optionally use momentum to speed up convergence.
 
 ##  Try VGG16 architecture
-![vgg16_image](/images/VGG16.jpg)
+![vgg16image](/images/VGG16.jpg)
 
 ### Load the CIFAR-10 dataset 
 ```python
