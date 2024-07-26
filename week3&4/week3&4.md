@@ -41,7 +41,7 @@ for input, target in dataset:
 - Optionally use momentum to speed up convergence.
 
 ##  Try VGG16 architecture
-![vgg16image](/images/VGG16.jpg)
+![vgg16image](./images/VGG16.jpg)
 
 ### Load the CIFAR-10 dataset 
 ```python
