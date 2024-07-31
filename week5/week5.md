@@ -14,12 +14,17 @@ The order of the point clouds do not matter, but it matters when the point cloud
 
 
 ## In deep learning
-![grad](./images/A-taxonomy-of-deep-learning-methods-for-3D-point-clouds.png)
+![grad](./image/A-taxonomy-of-deep-learning-methods-for-3D-point-clouds.png)
 ### Convolution-based Methods
-![grad](./images/pointnet.png)
+![grad](./image/pointnet.png)
 - 3D neighboring points
 - 3D continuous convolution
 - 3D discrete convolution
 ### Graph-based Methods
 
-###
+## PointNet
+
+
+
+
+> Written with [StackEdit](https://stackedit.io/).
