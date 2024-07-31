@@ -25,9 +25,13 @@ The order of the point clouds do not matter, but it matters when the point cloud
 ## PointNet
 N orederless points, each represented bu a D-dim vector
  #### Voxerlization
+ 
  #### Projection
+ 
  Muti-view CNN
+ 
  ![grad](./image/Multi-view.png)
+ 
  #### Feature extraction
 
 
