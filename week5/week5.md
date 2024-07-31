@@ -23,8 +23,16 @@ The order of the point clouds do not matter, but it matters when the point cloud
 ### Graph-based Methods
 
 ## PointNet
+N orederless points, each represented bu a D-dim vector
+ ### Voxerlization
+ ### Projection
+ Muti-view CNN
+ ![grad](./image/Multi-view.png)
+ ### Feature extraction
 
 
+## Symmetric function
+Symmetric function help the model's output remain consistent regardless of the input order of the points.
 
 
 > Written with [StackEdit](https://stackedit.io/).
