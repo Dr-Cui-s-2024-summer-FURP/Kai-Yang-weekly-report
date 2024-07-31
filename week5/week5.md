@@ -60,7 +60,7 @@ like cnn
  ![grad](./image/PointNet-architecture-Hierarchical-feature-learning-is-introduced-to-learn-features-at.png)
 
 ### Deal with Non-uniform point cloud
--   
+- Multi-scale grouping(MSG)
 - Multi-resolution grouping (MRG)
 
 Recursively apply pointnet at local regions
