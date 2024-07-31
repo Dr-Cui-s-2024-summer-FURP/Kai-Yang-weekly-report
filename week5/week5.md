@@ -35,13 +35,16 @@ N orederless points, each represented bu a D-dim vector
 Symmetric function help the model's output remain consistent regardless of the input order of the points.
 
 ### PointNet Classification Network and Segmentation Network
+
  ![grad](./image/network.png)
 
  ### 3D CNN vs PointNet
 **3D CNN**
+
 Hierarchival feature learning, multiple levels of abstraction
 
 **PointNet**
+
 Global feature learning, either one point or all points, **no local context**
 
 ## PointNet++
