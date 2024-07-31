@@ -24,15 +24,43 @@ The order of the point clouds do not matter, but it matters when the point cloud
 
 ## PointNet
 N orederless points, each represented bu a D-dim vector
- ### Voxerlization
- ### Projection
+ #### Voxerlization
+ #### Projection
  Muti-view CNN
  ![grad](./image/Multi-view.png)
- ### Feature extraction
+ #### Feature extraction
 
 
-## Symmetric function
+### Symmetric function
 Symmetric function help the model's output remain consistent regardless of the input order of the points.
 
+### PointNet Classification Network and Segmentation Network
+ ![grad](./image/network.png)
 
-> Written with [StackEdit](https://stackedit.io/).
+ ### 3D CNN vs PointNet
+**3D CNN**
+Hierarchival feature learning, multiple levels of abstraction
+
+**PointNet**
+Global feature learning, either one point or all points, **no local context**
+
+## PointNet++
+### PointNet++ overall thinking 
+like cnn
+
+
+**Sample centroids**
+- Uniform sampling
+- Farthest sampling
+**Group points by centroids**
+- K nearest neighbors
+- Ball query
+**Apply PointNet on each point Group**
+
+ ![grad](./image/PointNet-architecture-Hierarchical-feature-learning-is-introduced-to-learn-features-at.png)
+
+### Deal with Non-uniform point cloud
+-   
+- Multi-resolution grouping (MRG)
+
+Recursively apply pointnet at local regions
