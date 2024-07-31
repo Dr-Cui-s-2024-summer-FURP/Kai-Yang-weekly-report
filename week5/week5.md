@@ -52,9 +52,11 @@ like cnn
 **Sample centroids**
 - Uniform sampling
 - Farthest sampling
+
 **Group points by centroids**
 - K nearest neighbors
 - Ball query
+
 **Apply PointNet on each point Group**
 
  ![grad](./image/PointNet-architecture-Hierarchical-feature-learning-is-introduced-to-learn-features-at.png)
