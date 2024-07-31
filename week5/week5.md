@@ -73,3 +73,5 @@ like cnn
 - Multi-resolution grouping (MRG)
 
 Recursively apply pointnet at local regions
+
+## Reproduct pointNet++
